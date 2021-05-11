@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Projekt3</class>
+ <widget class="QMainWindow" name="Projekt3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>870</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>870</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Projekt3</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="SklepgroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>261</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Sklep</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Liczba kas</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>Bramki antykradzieżowe</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Liczba regałów</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="KasyspinBox"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="RegalyspinBox"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="BramkicheckBox">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>521</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QPushButton" name="AddLokalUz">
+       <property name="text">
+        <string>Dodaj lokal użytkowy</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="AddSklep">
+       <property name="text">
+        <string>Dodaj sklep</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="AddMiesz">
+       <property name="text">
+        <string>Dodaj mieszkanie</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="MieszkaniegroupBox">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>140</y>
+      <width>271</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mieszkanie</string>
+    </property>
+    <widget class="QGroupBox" name="MieszkancygroupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Mieszkańcy</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>231</width>
+        <height>189</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>Liczba mieszkańców:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="LiczbaMieszkancowLabel">
+           <property name="text">
+            <string>liczba</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QPushButton" name="PrevMiesz">
+           <property name="text">
+            <string>Poprzedni</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="NrMieszkanca">
+           <property name="text">
+            <string>numer</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="nextMiesz">
+           <property name="text">
+            <string>Następny</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="MieszkformLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>Imię</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="ImielineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>137</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>137</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>Nazwisko</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="NazwiskolineEdit">
+           <property name="maximumSize">
+            <size>
+             <width>137</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>Wiek</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="WiekspinBox">
+           <property name="maximumSize">
+            <size>
+             <width>137</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="maximum">
+            <number>150</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QPushButton" name="MieszkaniecsavepushButton">
+           <property name="text">
+            <string>Zapisz</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="dodMieszkButton">
+           <property name="text">
+            <string>Dodaj</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="UsMieszButton">
+           <property name="text">
+            <string>Usuń</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="formLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>20</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>Numer</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="NumerspinBox">
+        <property name="maximum">
+         <number>99999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>Powierzchnia</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="PowierzchniaspinBox">
+        <property name="maximum">
+         <number>500</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QGroupBox" name="OplatygroupBox">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>319</y>
+       <width>251</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Opłaty</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>231</width>
+        <height>57</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_5">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_24">
+         <property name="text">
+          <string>Kwota</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_25">
+         <property name="text">
+          <string>Ilość zaległych</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="KwotaspinBox">
+         <property name="maximum">
+          <number>99999</number>
+         </property>
+         <property name="singleStep">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="ZaleglespinBox"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>410</y>
+       <width>251</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Pomieszczenia</string>
+     </property>
+     <widget class="QWidget" name="formLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>221</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_6">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_26">
+         <property name="text">
+          <string>Stan ścian</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_27">
+         <property name="text">
+          <string>Stan rur</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="ScianyspinBox">
+         <property name="maximum">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="RuryspinBox">
+         <property name="maximum">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>99</y>
+      <width>521</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="PrevLok">
+       <property name="text">
+        <string>Poprzedni</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="NrObiektu">
+       <property name="text">
+        <string>numer</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="NextLok">
+       <property name="text">
+        <string>Następny</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="UsunButton">
+       <property name="text">
+        <string>Usuń obiekt</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="LokalgroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>261</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Lokal</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>18</y>
+       <width>221</width>
+       <height>163</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Adres</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="AdreslineEdit"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Gniazdo telefoniczne</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QCheckBox" name="TelefoncheckBox">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Gniazdo telewizyjne</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QCheckBox" name="TvcheckBox">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Liczba pomieszczeń</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="PomieszczeniaspinBox"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>System monitoringu</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QCheckBox" name="MonitoringcheckBox">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="LokUzgroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>261</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Lokal Użytkowy</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>27</y>
+       <width>221</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Rodzaj działalności</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="RodzajlineEdit"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Nazwa firmy</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="NazwalineEdit"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Liczba miejsc parkingowych</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Liczba pracowników</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="ParkingspinBox">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="PracownicyspinBox">
+          <property name="maximum">
+           <number>999</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>521</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Projekt 3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>150</y>
+      <width>301</width>
+      <height>301</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="SciezkagroupBox">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>460</y>
+      <width>291</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Ścieżka obrazu:</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>261</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="sciezka">
+        <property name="text">
+         <string>null</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Obrazbutton">
+        <property name="text">
+         <string>Zmień obraz...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="LoadImageLabel">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>567</x>
+      <y>59</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Liczba obiektów:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="LICZBA">
+       <property name="text">
+        <string>numer</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="ZapiszAktualnybutton">
+    <property name="geometry">
+     <rect>
+      <x>572</x>
+      <y>97</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zapisz zmiany</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="KlasaLabel">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>145</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>851</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>851</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FileSave">
+    <property name="geometry">
+     <rect>
+      <x>572</x>
+      <y>580</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zapis do pliku</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FileRead">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>580</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Odczyt z pliku</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BackButton">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>97</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cofnij zmiany</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>AddLokalUz</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>dodLokUz()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddSklep</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>dodSklep()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AddMiesz</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>dodMiesz()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PrevLok</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>poprzedni()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>NextLok</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>nastepny()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>336</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UsunButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>usun()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Obrazbutton</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>zmianaObrazu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>700</x>
+     <y>517</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ZapiszAktualnybutton</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>zapiszZmiany()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>657</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UsMieszButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>usunMieszkanca()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dodMieszkButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>dodajMieszkanca()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MieszkaniecsavepushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>zapiszMieszkanca()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PrevMiesz</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>prevMieszkaniec()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextMiesz</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>nextMieszkaniec()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>484</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FileRead</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>odczytZPliku()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>750</x>
+     <y>595</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FileSave</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>zapiszDoPliku()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>627</x>
+     <y>595</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Projekt3</receiver>
+   <slot>cofnij()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>790</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dodLokUz()</slot>
+  <slot>dodSklep()</slot>
+  <slot>dodMiesz()</slot>
+  <slot>usun()</slot>
+  <slot>poprzedni()</slot>
+  <slot>nastepny()</slot>
+  <slot>zmianaObrazu()</slot>
+  <slot>zapiszZmiany()</slot>
+  <slot>usunMieszkanca()</slot>
+  <slot>dodajMieszkanca()</slot>
+  <slot>zapiszMieszkanca()</slot>
+  <slot>prevMieszkaniec()</slot>
+  <slot>nextMieszkaniec()</slot>
+  <slot>odczytZPliku()</slot>
+  <slot>zapiszDoPliku()</slot>
+  <slot>cofnij()</slot>
+ </slots>
+</ui>
