@@ -17,5 +17,5 @@ Project is created with:
 * QT
 * Visual Studio Community
 
-##Inheritance of classes
+## Inheritance of classes
 ![classes](classes.png)
