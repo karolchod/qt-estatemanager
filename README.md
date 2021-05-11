@@ -4,7 +4,7 @@ Project finished in June 2019.
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Inheritance of classes] (#inheritance of classes)
+* [Inheritance of classes] (#inheritance-of-classes)
 
 ## General info
 Basic real estate manager app. It allows to add various types of real estate and edit their parameters. 
